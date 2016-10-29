@@ -19,4 +19,11 @@ p.caption = params[:the_caption]
   # render("create_row.html.erb")
   redirect_to("http://localhost:3000/photos")
   end
+
+  def destroy
+p = Photo.find_by({ :id => params[:id]})
+p.destroy
+
+redirect_to("http://localhost:3000/photos")
+  end
 end
