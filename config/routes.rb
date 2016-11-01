@@ -16,6 +16,5 @@ get("/update_photo/:id", { :controller => "photos", :action => "update_row" })
 
 # Routes to DELETE photos
 get("/delete_photo/:id", { :controller => "photos", :action => "destroy" })
-get("/delete_photo/:id", { :controller => "photos", :action => "destroy" })
 
 end
